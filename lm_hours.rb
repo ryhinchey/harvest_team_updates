@@ -241,9 +241,3 @@ class Hours
 end
 
 
-
-Hours.get_hours_daily
-Hours.get_hours_weekly
-Hours.users_time
-Hours.send_email
-
