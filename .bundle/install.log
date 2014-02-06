@@ -1,0 +1,11 @@
+# Logfile created on 2014-02-06 10:28:25 -0500 by logger.rb/41954
+I, [2014-02-06T10:28:25.580946 #8297]  INFO -- : 0:  mime-types (1.25.1) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/mime-types-1.25.1.gemspec
+I, [2014-02-06T10:28:25.582105 #8297]  INFO -- : 0:  polyglot (0.3.3) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/polyglot-0.3.3.gemspec
+I, [2014-02-06T10:28:25.582462 #8297]  INFO -- : 0:  treetop (1.4.15) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/treetop-1.4.15.gemspec
+I, [2014-02-06T10:28:25.582778 #8297]  INFO -- : 0:  mail (2.5.4) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/mail-2.5.4.gemspec
+I, [2014-02-06T10:28:25.583077 #8297]  INFO -- : 0:  pony (1.6.2) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/pony-1.6.2.gemspec
+I, [2014-02-06T10:28:25.583369 #8297]  INFO -- : 0:  rack (1.5.2) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-02-06T10:28:25.583660 #8297]  INFO -- : 0:  rack-protection (1.5.2) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/rack-protection-1.5.2.gemspec
+I, [2014-02-06T10:28:25.583946 #8297]  INFO -- : 0:  tilt (1.4.1) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-02-06T10:28:25.584246 #8297]  INFO -- : 0:  sinatra (1.4.4) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.4.4.gemspec
+I, [2014-02-06T10:28:25.584522 #8297]  INFO -- : 0:  bundler (1.5.1) from /Users/ryhinchey/.rvm/gems/ruby-2.0.0-p353@global/specifications/bundler-1.5.1.gemspec
