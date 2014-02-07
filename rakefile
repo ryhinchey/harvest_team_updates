@@ -2,7 +2,7 @@ desc "send emails at 1pm and 8pm every day"
 task :send_emails do
 
   require_relative 'lm_hours.rb'
-  if Time.now.utc.hour == 18 or Time.now.utc.hour == 25
+  if (Time.now.utc - 18000).strftime("%H") == "13" or (Time.now.utc - 18000).strftime("%H") == "20"
      Hours.get_hours_daily
      Hours.get_hours_weekly
      Hours.users_time

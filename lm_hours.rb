@@ -223,7 +223,7 @@ class Hours
 
     def self.send_email
       Pony.mail({
-        :to => 'rlhinchey@gmail.com',
+        :to => 'team@lightmatter.com',
         :from => 'ryan@lightmatter.com',
         :subject => 'Hours Update',
         :html_body => "<h2> Our Hours: </h2>#{@why} <h2> Team Weekly Billable: #{@team_weekly_billable.round(2)}</h2> <h2>Team Daily Billable: #{@team_daily_billable_hours.round(2)}</h2>",
@@ -231,8 +231,8 @@ class Hours
         :via_options => {
           :address        => 'smtp.gmail.com',
           :port           => '587',
-          :user_name      => 'rlhinchey',
-          :password       => 'thetrials1',
+          :user_name      => 'ryan@lightmatter.com',
+          :password       => 'good4now',
           :authentication => :plain,
           :domain         => "self.com"
       }
