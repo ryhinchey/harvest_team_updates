@@ -217,7 +217,6 @@ class Hours
         @users_time.each do |key, value|
             @why += "<p> #{key} = #{value}  </p>"
         end
-        puts @why
     end
 
 
