@@ -1,2 +1,2 @@
-require './lm_hours'
+require './hours'
 run Sinatra::Application

@@ -1,3 +1,4 @@
+
 require 'sinatra'
 require 'pony'
 require 'base64'
@@ -15,10 +16,10 @@ require 'net/smtp'
 
 class Harvest
 
-  SUBDOMAIN        = 'lightmatter'
-  ACCOUNT_EMAIL    =  'ryan@lightmatter.com'
-  ACCOUNT_PASSWORD =  'good4now'
-  USER_AGENT       = 'Lightmatter HQ'
+  SUBDOMAIN        = ENV["SUBDOMAIN"] || #subdomain
+  ACCOUNT_EMAIL    =  ENV["EMAIL"] || #account_email
+  ACCOUNT_PASSWORD =  ENV["PASSWORD"] || #account_password
+  USER_AGENT       = ""
   HAS_SSL          = true
 
   def initialize
@@ -115,10 +116,11 @@ end
 
 end
 
-#end Harvest Setup
+########end Harvest Setup############
 
 class Hours
-    @users = {"Ben" => "576224", "Greg" => "576227", "Nicole" => "576226", "Ryan" => "576220"}
+
+    @users = {} #user_name" => user_id
     @users_time = {}
     @bill_option = ['yes', 'no']
     @harvest = Harvest.new
@@ -223,18 +225,18 @@ class Hours
 
     def self.send_email
       Pony.mail({
-        :to => 'team@lightmatter.com, ryan@lightmatter.com',
-        :from => 'ryan@lightmatter.com',
+        :to => '',
+        :from => '',
         :subject => "#{Time.now.strftime("%m/%d/%Y")} Hours Update",
         :html_body => "<h2> Our Hours: </h2>#{@why} <h2> Team Weekly Billable: #{@team_weekly_billable.round(2)}</h2> <h2>Team Daily Billable: #{@team_daily_billable_hours.round(2)}</h2>",
         :via => :smtp,
         :via_options => {
           :address        => 'smtp.gmail.com',
           :port           => '587',
-          :user_name      => 'ryan@lightmatter.com',
-          :password       => 'good4now',
+          :user_name      => '',
+          :password       => '',
           :authentication => :plain,
-          :domain         => "self.com"
+          :domain         => ""
       }
       })
   end
